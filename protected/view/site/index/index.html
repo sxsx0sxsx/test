@@ -1,0 +1,135 @@
+	<title>首页</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
+	<script type="text/javascript" src="js/new_file.js" ></script>
+	<script type="text/javascript" src="js/banner.js" ></script>
+	<script type="text/javascript" src="js/IE9.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js" ></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$(".nav ul li").eq(0).addClass("current");
+			})
+		</script>
+		
+			
+		<!--广告图-->
+		<div class="banner">
+			<div class="banner_content">
+			<ul>
+				<li class="banner_on">
+					<a href="index.php?admin=site&m=product&a=product">
+						<img src="<?=$banner[0]['image']?>" alt="banner1">
+					</a>
+				</li>
+				<li>
+					<a href="index.php?admin=site&m=product&a=product">
+						<img src="<?=$banner[1]['image']?>" alt="banner2">
+					</a>
+				</li>
+				<li>
+					<a href="index.php?admin=site&m=product&a=product">
+						<img src="<?=$banner[2]['image']?>" alt="banner3">
+					</a>
+				</li>
+			</ul>
+			<ol>
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+			</ol>
+			</div>
+		</div>
+		
+			
+		<!--中间-->
+		<div class="content">
+			<!--产品展示-->
+			<div class="product">
+				<div class="title">
+				  <h1>产品展示</h1>
+				  <span>&nbsp;Product display</span>
+				</div>
+				<div class="productbg">
+					<ol>
+					<?php foreach($product as $k=>$v){ ?>
+						<li>
+							  <img src="<?=$v['image']?>" style="width: 269px; height: 402px;" />
+							<div class="opacity"></div>
+							<div class="text">
+								<h2><a href="index.php?admin=site&m=product&a=pro_details&id=<?=$v['id']?>"><?php echo mb_substr($v["manufacturer"],0,10,"utf-8") ?></a></h2>
+								<h3><a href="index.php?admin=site&m=product&a=pro_details&id=<?=$v['id']?>"><?php echo mb_substr($v["pro_name"],0,10,"utf-8") ?></a></h3>
+								<p><?php echo mb_substr($v["des"],0,50,"utf-8") ?></p>
+								<a class="pro_text" href="index.php?admin=site&m=product&a=pro_details&id=<?=$v['id']?>"></a>
+							</div>
+						</li>
+					<?php } ?>
+					</ol>
+
+				</div>
+				<div class="product_ending">
+				   <a href="index.php?admin=site&m=product&a=product">查看更多</a>
+				</div>
+			</div>
+			<!--公司介绍-->
+			<div class="about">
+				<div class="title">
+					<h1>公司介绍</h1>
+					<span>&nbsp;About Us</span>
+				</div>
+				<div class="aboutbg">
+				  <a href="index.php?admin=site&m=about_us&a=about_us">
+					<img src="<?=$about_us['image'][0]?>" />
+				  </a>
+				</div>
+				<div class="aboutbgtext">
+					<ol>
+						<li>
+							<a href="index.php?admin=site&m=about_us&a=about_us">
+								<img src="<?=$about_us['image'][1]?>"/>
+							</a>
+						</li>
+						<li>
+							<a href="index.php?admin=site&m=about_us&a=about_us">
+								<img src="<?=$about_us['image'][2]?>"/>
+							</a>
+						</li>
+						<li>
+							<a href="index.php?admin=site&m=about_us&a=about_us">
+								<img src="<?=$about_us['image'][3]?>"/>
+							</a>
+						</li>
+					</ol>
+					<p><?=$about_us["content"]?></p>
+				</div>
+				<div class="more">
+		          <h1><a href="index.php?admin=site&m=about_us&a=about_us">查看更多</a></h1>
+				</div>
+			</div>
+	        <!--新闻资讯-->
+			<div class="news">
+				<div class="title">
+					<h1>新闻资讯</h1>
+					<span>&nbsp;News center</span>
+			    </div>
+			    <div class="news_list">
+			    	<ol>
+			    	<?php foreach($news as $k=>$v){ ?>
+			    		<li>
+			    			<a href="index.php?admin=site&m=news&a=news_details&id=<?=$v['id']?>"><img src="<?=$v['image']?>"/></a>
+			    			<div>
+			    			  <h2><a href="index.php?admin=site&m=news&a=news_details&id=<?=$v['id']?>"><?=$v["title"]?></a><span><?=$v["time"]?></span></h2>
+			    			  <p><?php echo mb_substr($v["content"],0,100,"utf-8") ?></p>
+			    			</div>
+			    		</li>
+			    	<?php } ?>	
+			    	</ol>
+			    	
+			    </div>
+			    	
+			    		
+			</div>
+		</div>
+		
+			
+		

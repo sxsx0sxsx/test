@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <controller>
+        <name en="about" level="1" hidden="0">公司简介模块</name>
+        <action>
+           <name en="insert" level="2" hidden="0">添加简介</name>
+            <url><![CDATA[index.php?admin=admin&m=about&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="3" hidden="0">简介列表</name>
+           <url><![CDATA[index.php?admin=admin&m=about&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="4" hidden="1">简介修改</name>
+          <url><![CDATA[index.php?admin=admin&m=about&a=update]]></url>
+      </action>
+      <action>
+          <name en="delete" level="5" hidden="1">简介删除</name>
+          <url><![CDATA[index.php?admin=admin&m=about&a=delete]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="banner" level="6" hidden="0">banner模块</name>
+        <action>
+           <name en="insert" level="7" hidden="0" >添加banner</name>
+            <url><![CDATA[index.php?admin=admin&m=banner&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="8" hidden="0">banner列表</name>
+           <url><![CDATA[index.php?admin=admin&m=banner&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="9" hidden="1">banner修改</name>
+          <url><![CDATA[index.php?admin=admin&m=banner&a=update]]></url>
+      </action>
+       <action>
+          <name en="delete" level="10" hidden="1">banner删除</name>
+          <url><![CDATA[index.php?admin=admin&m=banner&a=delete]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="category" level="11" hidden="0">分类模块</name>
+        <action>
+           <name en="insert" level="12" hidden="0" >添加分类</name>
+            <url><![CDATA[index.php?admin=admin&m=category&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="13" hidden="0">分类列表</name>
+           <url><![CDATA[index.php?admin=admin&m=category&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="14" hidden="1">分类修改</name>
+          <url><![CDATA[index.php?admin=admin&m=category&a=update]]></url>
+      </action>
+       <action>
+          <name en="delete" level="15" hidden="1">分类删除</name>
+          <url><![CDATA[index.php?admin=admin&m=category&a=delete]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="news" level="16" hidden="0">新闻模块</name>
+        <action>
+           <name en="insert" level="17" hidden="0">添加新闻</name>
+            <url><![CDATA[index.php?admin=admin&m=news&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="18" hidden="0">新闻列表</name>
+           <url><![CDATA[index.php?admin=admin&m=news&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="19" hidden="1">新闻修改</name>
+          <url><![CDATA[index.php?admin=admin&m=news&a=update]]></url>
+      </action>
+      <action>
+          <name en="delete" level="20" hidden="1">新闻删除</name>
+          <url><![CDATA[index.php?admin=admin&m=news&a=delete]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="product" level="21" hidden="0" >产品模块</name>
+        <action>
+           <name en="insert" level="22" hidden="0">添加产品</name>
+            <url><![CDATA[index.php?admin=admin&m=product&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="23" hidden="0">产品列表</name>
+           <url><![CDATA[index.php?admin=admin&m=product&a=index]]></url>
+        </action>
+      <action>
+          <name en="update" level="24" hidden="1">产品修改</name>
+          <url><![CDATA[index.php?admin=admin&m=product&a=update]]></url>
+      </action>
+      <action>
+          <name en="delete" level="25" hidden="1" >产品删除</name>
+          <url><![CDATA[index.php?admin=admin&m=product&a=delete]]></url>
+      </action>
+   </controller>
+   
+   <controller>
+        <name en="message" level="26" hidden="0">留言模块</name>
+        <action>
+           <name en="index" level="27" hidden="0">留言列表</name>
+           <url><![CDATA[index.php?admin=admin&m=message&a=index]]></url>
+        </action>
+       <action>
+          <name en="look" level="28" hidden="1">留言查询</name>
+          <url><![CDATA[index.php?admin=admin&m=message&a=look]]></url>
+      </action>
+       <action>
+          <name en="delete" level="29" hidden="1">留言删除</name>
+          <url><![CDATA[index.php?admin=admin&m=message&a=delete]]></url>
+      </action>
+   </controller>
+    <controller>
+        <name en="contact" level="40" hidden="0">联系人模块</name>
+        <action>
+           <name en="index" level="41" hidden="0">联系人信息</name>
+            <url><![CDATA[index.php?admin=admin&m=contact&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="42" hidden="1">联系人修改</name>
+          <url><![CDATA[index.php?admin=admin&m=contact&a=update]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="link" level="43" hidden="0">友情链接模块</name>
+        <action>
+           <name en="insert" level="44" hidden="0" >添加友情链接</name>
+            <url><![CDATA[index.php?admin=admin&m=link&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="45" hidden="0">友情链接列表</name>
+           <url><![CDATA[index.php?admin=admin&m=link&a=index]]></url>
+        </action>
+       <action>
+          <name en="update" level="46" hidden="1">友情链接修改</name>
+          <url><![CDATA[index.php?admin=admin&m=link&a=update]]></url>
+      </action>
+       <action>
+          <name en="delete" level="47" hidden="1">友情链接删除</name>
+          <url><![CDATA[index.php?admin=admin&m=link&a=delete]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="code" level="48" hidden="0">二维码模块</name>
+        <action>
+           <name en="index" level="49" hidden="0">二维码</name>
+            <url><![CDATA[index.php?admin=admin&m=code&a=index]]></url>
+        </action>
+        <action>
+          <name en="update" level="50" hidden="1">二维码修改</name>
+          <url><![CDATA[index.php?admin=admin&m=code&a=update]]></url>
+      </action>
+   </controller>
+   <controller>
+        <name en="level" level="30" hidden="0">权限模块</name>
+        <action>
+           <name en="insert" level="31" hidden="0">添加权限</name>
+            <url><![CDATA[index.php?admin=admin&m=level&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="32" hidden="0">权限列表</name>
+           <url><![CDATA[index.php?admin=admin&m=level&a=index]]></url>
+        </action>
+         
+         <action>
+           <name en="delete" level="34" hidden="1">权限删除</name>
+           <url><![CDATA[index.php?admin=admin&m=level&a=delete]]></url>
+        </action>
+   </controller>
+   <controller>
+        <name en="admin" level="35" hidden="0">管理员模块</name>
+        <action>
+           <name en="insert" level="36" hidden="0">添加管理员</name>
+            <url><![CDATA[index.php?admin=admin&m=admin&a=insert]]></url>
+        </action>
+        <action>
+           <name en="index" level="37" hidden="0">管理员列表</name>
+           <url><![CDATA[index.php?admin=admin&m=admin&a=index]]></url>
+        </action>
+       
+       <action>
+          <name en="delete" level="39" hidden="1">管理员删除</name>
+          <url><![CDATA[index.php?admin=admin&m=admin&a=delete]]></url>
+      </action>
+   </controller>
+</menu>

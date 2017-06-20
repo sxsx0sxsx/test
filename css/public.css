@@ -1,0 +1,305 @@
+/***********公共样式***********/
+
+*{
+	/*清除列表自带的标点*/
+	list-style:none;
+    /*清除下划线*/
+	text-decoration: none;
+	/*字体为黑色*/
+	color: black;
+    /*字体为微软雅黑*/
+	font-family: "微软雅黑";
+/*清除所有元素自带的内边距和外边距*/
+    margin: 0;
+    padding: 0;
+   /* font-size: 14px*/
+}
+
+b,i{
+	/*字体不倾斜*/
+	font-style: normal;
+	/*字体不加粗*/
+	font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+   /*清除浮动*/
+}
+.clearfix{
+	overflow: auto;
+}
+.clear{
+	clear: all;
+}
+a:focus{
+	/*清除IE浏览器的虚线边框*/
+	outline: none;
+}
+input:focus{
+	/*清除谷歌浏览器的蓝色边框*/
+	outline: none;
+}
+textarea:focus{
+	outline: none;
+}
+img{
+	border-style: none;
+	}
+/**************头部样式**********/
+.header{
+	width: 100%;
+	height: 100px;
+	background:aliceblue
+	}
+.header_content{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.header_content .current a{
+	background: #ececec;
+	color: #009934;
+}
+/*logo*/
+.logo{
+	width: 320px;
+	height: 100px;
+	float: left;
+}
+
+.logo img{
+	float: left;
+	margin:17px 0 0 53px;
+}
+.logo div{
+	float: right;
+	padding-top: 36px;
+	line-height: 22px;
+}
+.logo div h1{
+	font-size: 22px;
+	line-height: 22px;
+}
+.logo div h2{
+	font-size: 14px;
+	line-height: 22px;
+}
+.nav{
+	width: 690px;
+	height: 100px;
+	float: right;
+}
+.nav ul li{
+	float: left;
+	width: 136px;
+	height: 100px;
+	line-height: 100px;
+	
+}
+.nav ul li a{
+	display: block;
+	font-size: 18px;
+	width: 136px;
+	height: 100px;
+	text-align: center;
+	
+}
+.nav ul li:hover a{
+	background: #ececec;
+	color: #009934;
+}
+
+
+
+/***********尾部样式**********/
+.footer{
+	width: 100%;
+	height: 272px;
+}
+.footer_pron{
+	width: 100%;
+	height: 231px;
+	background: #dde4df;
+}
+.footer_content{
+	width: 1200px;
+	height: 231px;
+	margin: 0 auto;
+}
+
+
+.footer_partner{
+	width: 785px;
+	height: 76px;
+	
+}
+.footer_partner ol li{
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding-top: 40px;
+	padding-left:10px;
+	
+}
+.footer_partner a{
+	font-size: 14px;
+	padding-right: 27px;
+	color: #666666;
+}
+.footer_partner ol a:hover {
+	color: #009934;
+}
+.dh{
+	font-size: 23.9px;
+	color: #666666;
+}
+
+
+.footer_lgotle{
+	width: 785px;
+	height: 155px;
+	display: inline-block;
+	padding-left: 35px;
+	
+}
+.footer_lgotle .left{
+	width: 310px;
+	height: 165px;
+	float: left;
+}
+.footer_lgotle  img{
+	width: 68px;
+	height: 64px;
+	margin-left: 72px;
+}
+.footer_lgotle h3 {
+	width: 218px;
+	font-size: 24px;
+	color: #009933;
+	line-height: 40px;
+	padding-left:1px;
+	border-bottom:solid 1px #909793; 
+}
+.footer_lgotle span{
+	font-size: 18px;
+	color: #666666;
+}
+.footer_lgotle ol {
+	
+	
+	width: 690px;
+	height: 165px;
+	margin: 0 0 0 0;
+	
+    
+	}
+.footer_lgotle .tel{
+	width: 44px;
+	height: 165px;
+	float: left;
+      
+}
+
+.footer_lgotle .tel img{
+	margin: 0 0 0 -20px;
+	
+}
+
+.footer_lgotle ol li{
+	margin: 0 0 0 0;
+	line-height: 25px;
+	color: #666666;
+
+}
+.footer_lgotle .dh{
+	color: green;
+}
+.qr{
+	width: 190px;
+	height: 231px;
+    float: right;
+    margin-top: -49px;
+    margin-right: -55px;
+}
+
+.qr h2{
+	width:143px;
+	height: 40px;
+	font-size: 14px;
+	padding-left: 19px;
+}
+
+.qr ol li{
+	float: right;
+	display: block;
+}
+.qr h3{
+	width: 104px;
+	height: 103px;
+	padding-left: 15px;
+}
+
+.footerdown{
+	width: 100%;
+	height: 41px;
+	background: #b5c2b9;
+}
+
+.footerdown p{
+	font-size: 12px;
+	width: 1200px;
+	height: 41px;
+	margin: 0 auto;
+	display: block;
+	line-height: 41px;
+	text-align:center;
+	padding-left: 200px;
+}
+.dh{
+	font: 23.9;
+	color: #4baa63;
+}
+.qr .qq{
+	display: inline-block;
+	width:40px;
+	height:40px;
+	background: url(../img/qq.png);
+}
+.qr .qq:hover a{
+    background: url(../img/qq1.png) no-repeat ; 
+}
+.qr .weixin {
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/weixin1.png);
+}
+.qr .weixin :hover a {
+	background: url(../img/weixin.png) no-repeat;
+}
+.qr a{
+	display: inline-block;
+	width:40px;
+	height: 40px;
+}
+.qq{
+	background: url(../img/qq.png) no-repeat;
+	}
+.qq:hover{
+	background: url(../img/qq1.png) no-repeat;
+}
+.wx{
+	background: url(../img/weixin1.png) no-repeat;
+	}
+.wx:hover{
+	background: url(../img/weixin.png) no-repeat;
+}
+.wb{
+	background: url(../img/weibo.png) no-repeat;
+	}
+.wb:hover{
+	background: url(../img/weibo1.png) no-repeat;
+}
+

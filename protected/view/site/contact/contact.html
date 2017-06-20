@@ -1,0 +1,111 @@
+        <title>联系我们</title>
+		<link rel="stylesheet" href="css/contact.css" />
+		
+		<script type="text/javascript" src="js/value.js" ></script>
+		<script type="text/javascript" src="js/contact.js" ></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".nav ul li").eq(4).addClass("current");
+			})
+		</script>
+		
+	    
+<!--联系我们-->
+        <div class="contact_us">
+        	<div class="contact_bg">
+        		<a href="index.php?admin=site&m=contact&a=contact"><img src="img/contactbg.jpg"></a>
+        	</div>
+        	<ul class="location">
+        		<li>
+        			<h5>
+        			你的位置 ：
+        			</h5>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=index&a=index">
+        			 首页 >
+        			</a>
+        		</li>
+        		<li class="on">
+        			<a href="index.php?admin=site&m=contact&a=contact">
+        			&nbsp;联系我们
+        			</a>
+        		</li>
+        	</ul>
+			<div class="location_main">
+				<div class="contact_text">
+					<h2>联系我们</h2>
+					<span>&nbsp;&nbsp;Contact Us&nbsp;&nbsp;</span>
+				</div>
+				<div class="content">
+						<ul>
+							<li>
+								<img src="img/phone.png"><h3><?=$contact["cellphone"]?></h3>
+							</li>
+							<li>
+								<img src="img/telphone.png"><h3><?=$contact["phone"]?></h3>
+							</li>
+							<li>
+								<img src="img/txqq.png"><h3><?=$contact["qq"]?></h3>
+							</li>
+							<li>
+								<img src="img/youjian.png"><h3><?=$contact["email"]?></h3>
+							</li>
+							<li>
+								<img src="img/tubiao.png"><h3><?=$contact["address"]?></h3>
+							</li>
+						</ul>
+
+					
+					<!--地图-->
+					<div class="maptop">
+						<div class="map">
+							<iframe src="map.html" width="600px" height="332px" scrolling="no" frameborder="no"></iframe>
+						</div>
+				    <!--留言板-->
+							<form class="mes" action="" method="post" id="myform" >
+								<div class="mestext">
+									<div>
+										<input type="text" name="name" id="name" size="23" value="姓名">
+										<input type="text" name="email" id="email" size="23" value="邮箱">
+										<input type="text" name="phone" id="phone" size="23" value="电话">
+									</div>
+									
+									<textarea rows="5" cols="30" value="请你给我们留言" id="message" name="message"  ></textarea>
+								</div>
+								<div class="mesbottom">	
+									<input type="text" name="code" id="code" size="15" value="验证码"><img id="code_img" src="index.php?admin=site&m=login&a=code&num=1"> &nbsp;
+									<a href="" id="code_change">看不清，换一张</a>
+								</div>						
+																					  
+						     <input type="submit" value="提交" />
+						    </form>
+					</div>
+				</div>
+			</div>
+        </ul>
+<script>
+   //实现验证码切换
+  $("#code_img").click(function(){
+     var url =$(this).attr("src");
+     var num = url[url.length-1]; //获取路径中最后一个字符
+     num++;
+     $(this).attr("src","index.php?admin=site&m=login&a=code&num="+num);
+  });
+
+  $("#code_change").click(function(){
+     var url =$("#code_img").attr("src");
+     var num = url[url.length-1]; //获取路径中最后一个字符
+     num++;
+     $("#code_img").attr("src","index.php?admin=site&m=login&a=code&num="+num);
+     return false;
+  });
+</script>
+	    
+	    
+	    
+	    
+	    
+	    
+	    

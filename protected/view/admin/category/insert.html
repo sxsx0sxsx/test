@@ -1,0 +1,65 @@
+<script type="text/javascript" src="resources/scripts/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="resources/scripts/Validform_v5.3.2_min.js"></script>
+ 
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>Content box</h3>
+        <ul class="content-box-tabs">
+          
+            <!-- href must be unique and match the id of target div -->
+            <li><a href="#tab2" class="default-tab">Forms</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">
+        
+        <div class="tab-content default-tab" id="tab2">
+          <form action="#" method="post" class="demoform">
+            <fieldset>
+            <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+            <p>
+              <label>分类的名称</label>
+              <input class="text-input small-input" type="text" id="small-input" name="name" datatype="*" />
+              <span class="input-notification success png_bg">Successful message</span>
+              <!-- Classes for input-notification: success, error, information, attention -->
+              <br />
+              <small>A small description of the field</small> </p>
+            <p>
+              <label>父级的id</label>
+              <input class="text-input medium-input datepicker" type="text" id="medium-input" name="pid" value="0" readonly="readonly" />
+              <span class="input-notification error png_bg">Error message</span>
+           </p>
+            <p class="cate">
+              <label>请选择分类</label>
+              <select>
+                 <option value="0">顶级分类</option>
+                 <?php foreach($category as $k=>$v){?>
+                 <option value="<?=$v['id']?>"><?=$v["name"]?></option>
+                <?php  }?>
+              </select>
+           </p>
+            
+            <p>
+              <input class="button" type="submit" value="Submit" />
+            </p>
+            </fieldset>
+            <div class="clear"></div>
+            <!-- End .clear -->
+          </form>
+        </div>
+        <!-- End #tab2 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+    <!-- End .content-box -->
+    
+   <script>
+   $(".demoform").Validform();
+      $(".cate select").change(function(){
+
+           var content = $(this).val();
+           $("input[name='pid']").val(content);
+      })
+   </script>

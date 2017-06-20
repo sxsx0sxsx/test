@@ -1,0 +1,21 @@
+
+<div>
+	 您没有该权限，
+	 在  <span id="time">3</span>s   后跳转到其他页面
+</div>
+<script type="text/javascript" src="resources/scripts/jquery-1.3.2.min.js"></script>
+<script>
+  function changeTime(){
+  	
+  	  var time= parseInt($("#time").html());
+  	  
+      time--;
+      $("#time").html(time);
+      if(time==0){
+      	  //条件到login/index页面
+      	  window.location.href="index.php?admin=admin&m=login&a=index";
+      }
+  }
+
+  setInterval(changeTime,1000);
+</script>

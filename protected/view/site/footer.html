@@ -1,0 +1,74 @@
+<!--底部-->
+<?php
+$site_footer=select("contact_us","`id`=1");
+$link_footer=selects("link");
+$code_footer=select("code","`id`=1");
+?>
+		<div class="footer">
+			<div class="footer_pron">
+				<div class="footer_content">
+						<div class="footer_partner">
+							<ol>
+								<li>合作伙伴:</li>
+								<li>
+									<a href="<?=$link_footer[0]['url']?>">
+										<?=$link_footer[0]['name']?>
+									</a>
+								</li>
+								<li>
+									<a href="<?=$link_footer[1]['url']?>">
+										<?=$link_footer[1]['name']?>
+									</a>
+								</li>
+								<li>
+									<a href="<?=$link_footer[2]['url']?>">
+										<?=$link_footer[2]['name']?>
+									</a>
+								</li>
+								<li>
+									<a href="<?=$link_footer[3]['url']?>">
+										<?=$link_footer[3]['name']?>
+									</a>
+								</li>
+							</ol>
+						</div>
+						<div class="footer_lgotle">
+							<div class="left">
+							<img src="img/logo.png"/>
+							<h3>悦舒惠地毯有限公司</h3>
+							<span>Yue ShuHui carpet co LTD</span>
+							</div>
+							<ol>
+								
+								
+								<span class="tel"><img src="img/tel.png"/></span>
+								
+								<li>服务热线</li>
+								<li class="dh"><?=$site_footer["phone"]?></li>
+								<li>联系人员：<?=$site_footer["name"]?></li>
+								<li>联系方式：<?=$site_footer["email"]?></li>
+								<li>公司地址：<?=$site_footer["address"]?></li>
+							</ol>
+						</div>
+						
+						<div class="qr">
+							
+									<a class="qq" href="http://www.qq.com/"></a>
+							
+						
+							        <a class="wx" href="https://wx.qq.com/"></a>
+					  	
+					
+					  			  	<a class="wb" href="http://www.sina.com.cn/"></a>
+								      <h2><img src="img/erweima.png" >微信扫一扫</h2>
+									   <h3><a href="http://30890_x8xy374.php.100dan.cn/index.php?admin=site&m=index&a=index"><img src="<?=$code_footer['image']?>" style="width: 103px; height: 103px;" /></a></h3>
+						</div>
+				</div>				
+			</div>	
+		  	<div class="footerdown">
+		  			<p>版权所有 © 2017 Yueshuhui. 悦舒慧地毯有限公司</p>
+		  	</div>
+		</div>
+		
+	</body>
+</html>

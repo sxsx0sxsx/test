@@ -1,0 +1,175 @@
+
+		
+	    <title>产品详情</title>
+		
+		<link rel="stylesheet" href="css/pro_dateils.css" />
+		
+		<script type="text/javascript" src="js/pro_dateils.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".nav ul li").eq(3).addClass("current");
+			})
+		</script>
+	    
+        <!--产品中心详情页-->
+        <div class="pro_details">
+        	<div class="banner_pic">
+        		<a href="index.php?admin=site&m=product&a=product"><img src="img/pro_detailsbg.jpg"></a>
+        	</div>
+        	<div class="location">
+        		<ul>
+        		<li>
+        			<h5>
+        			你的位置 ：
+        			</h5>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=index&a=index">
+        			 首页 >
+        			</a>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=product&a=product">
+        			  产品中心 >
+        			</a>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=product&a=product">
+        			  <?=$category["name"]?> >
+        			</a>
+        		</li>
+        		<li class="on">
+        			<a href="">
+        			&nbsp;满铺地毯02
+        			</a>
+        		</li>
+        	</ul>
+        	</div>
+        	
+			<div class="main clearfix">
+				<div class="productcenter">
+					<h2>产品中心</h2>
+					<span>&nbsp;&nbsp;Product center&nbsp;&nbsp;</span>
+				</div>
+				<div class="product_ol">
+			      <div class="product_text">			    	
+			    	<ol>
+			    		<li>
+			    			<a href="index.php?admin=site&m=product&a=product">化纤地毯</a>
+			    		</li>
+			    		<li>
+			    			<a href="index.php?admin=site&m=product&a=product">满铺地毯</a>
+			    		</li>
+			    		<li>
+			    			<a href="index.php?admin=site&m=product&a=product">混纺地毯</a>
+			    		</li>
+			    		<li>
+			    			<a href="index.php?admin=site&m=product&a=product">塑料地毯</a>
+			    		</li>
+			    	</ol>
+			      </div>
+			      <div class="promain clearfix">
+			          <div id="lb" class="protop">
+			      	  	<div class="probg">
+			      	  	<style>
+			      	  		.probg ol li a img{ width: 436px; height: 402px; }
+			      	  		.probg ul li a img{ width: 81px; height: 74px; }
+			      	  	</style>
+			      	  		<ol>
+			      	  			<li class="pro_on">
+			      	  				<a href="">
+			      	  					<img src="<?=$arr['image'][0]?>">
+			      	  				</a>
+			      	  			</li>
+			      	  			<li>
+			      	  				<a href="">
+			      	  					<img src="<?=$arr['image'][1]?>"> 
+			      	  				</a>
+			      	  			</li>
+			      	  			<li>
+			      	  				<a href="">
+			      	  					<img src="<?=$arr['image'][2]?>"> 
+			      	  				</a>
+			      	  			</li>
+			      	  			<li>
+			      	  				<a href="">
+			      	  					<img src="<?=$arr['image'][3]?>"> 
+			      	  				</a>
+			      	  			</li>
+			      	  		</ol>
+			      	  		<div class="prev">
+			      	  			<a href="###">
+			      	  				<img src="img/left6.png"> 
+			      	  			</a>
+			      	  		</div>
+			      	  		<ul>
+			      	  			<li class="on">
+			      	  				<a href="###">
+			      	  					<img src="<?=$arr['image'][0]?>">
+			      	  				</a>
+			      	  			<li>
+			      	  				<a href="###">
+			      	  					<img src="<?=$arr['image'][1]?>">
+			      	  				</a>
+			      	  			</li>
+			      	  			<li>
+			      	  				<a href="###">
+			      	  					<img src="<?=$arr['image'][2]?>">
+			      	  				</a>
+			      	  			</li>
+			      	  			<li>
+			      	  				<a href="###">
+			      	  					<img src="<?=$arr['image'][3]?>">
+			      	  				</a>
+			      	  			</li>
+			      	  		</ul>
+			      	  		<div class="next">
+			      	  			<a href="###">
+			      	  				<img src="img/left1.png">
+			      	  			</a>
+			      	  		</div>
+			      	  	</div>
+			          	<div class="protext">
+			          		<div class="left">
+			          		<ul>
+			          			<li><h4>产品介绍</h4></li>
+			          			<li>产品名称：<?=$arr['pro_name']?></li>
+			          			<li>生产材料：<?=$arr['material']?></li>
+			          			<li>产品风格：<?=$arr['style']?></li>
+			          			<li>产品重量：<?=$arr['weight']?></li>
+			          			<li>地毯颜色：<?=$arr['color']?></li>
+			          			<li>地毯形状：<?=$arr['shape']?></li>
+			          			<li>适用场景：<?=$arr['scenario']?></li>
+			          			<li>生产厂家：<?=$arr['manufacturer']?></li>
+			          		</ul>
+			          		</div>
+			          		<div class="right">
+			          			<h4>地毯介绍</h4>
+			          			<p><?php echo mb_substr($arr['des'],0,200,"utf-8") ?></p>
+			          		</div>
+			          	</div>
+			          </div>
+			          <div class="profooter clearfix">
+			            	<h4>地毯用途</h4>
+			            	<p><?=$arr['content']?></p>
+			          </div>
+			          
+			        </div>
+			        <div class="clear"></div>
+			      </div>
+			 </div>
+			</div>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    

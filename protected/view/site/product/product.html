@@ -1,0 +1,71 @@
+
+		<title>产品中心</title>
+		<link rel="stylesheet" href="css/product.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js" ></script>
+		<script type="text/javascript" src="js/product.js" ></script>
+		
+	    <!--产品中心-->
+	    <div class="product">
+	    	<div class="banner_pic">
+				<a href="index.php?admin=site&m=product&a=product"><img src="img/productbg.jpg"></a>
+			</div>
+			<div class="location">
+			  <ul>
+				<li>
+        			<h5>
+        			你的位置 ：
+        			</h5>
+        		</li>
+        		<li>
+        			<a href="index.html">
+        			 首页 >
+        			</a>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=product&a=product">
+        			产品中心 >
+        			</a>
+        		</li>
+        		<li class="on">
+        			<a href="index.php?admin=site&m=product&a=product">
+        			&nbsp;化纤地毯
+        			</a>
+        		</li>
+       		  </ul>
+       		</div>
+			<div class="main">
+				<div class="current">
+					<h2>产品中心</h2>
+					<span>&nbsp;&nbsp;Product center &nbsp;</span>
+				</div>
+			      <div class="about_olbg">	    	
+			    	<ol>
+			    		<?php foreach($cate as $k=>$v){?>
+			    		<li>
+			    			<a name="<?=$v['id']?>" href=""><?=$v["name"]?></a>
+			    		</li>
+			    	    <?php } ?>
+			    	</ol>
+			      </div>
+			      <div class="product_img">
+			      	<ul class="Product_text" id="img">
+			      	<?php foreach($arr as $k=>$v){ ?>
+			      		<li >
+			      			<a href="index.php?admin=site&m=product&a=pro_details&id=<?=$v['id']?>" >
+			      				<img src="<?=$v['image']?>" >
+			      			</a>
+			      			<a class="pro_list" href="index.php?admin=site&m=product&a=pro_details&id=<?=$v['id']?>"><?=$v['pro_name']?></a>
+			      		</li>
+			      	<?php } ?>			      		
+			      	</ul>
+			      </div>
+			        <div class="page">
+			      		<?=$page?>
+			        </div>
+			    </div>
+			</div>
+	    </ul>
+	    
+
+	    
+	    

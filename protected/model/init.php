@@ -1,0 +1,11 @@
+<?php
+session_start();
+header("Content-Type:text/html;charset=utf-8");
+include("protected/model/db.fun.php");
+include("protected/model/page.fun.php");
+include("protected/model/global.fun.php");
+include("protected/model/img.fun.php");
+include("protected/model/category.fun.php");
+connect("yueshuhui","localhost","root","root");
+//connect();
+?>

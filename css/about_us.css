@@ -1,0 +1,137 @@
+/***************清除滚动条样式**************/
+body{
+	overflow:scroll;
+	overflow-x:hidden;
+}
+/******公司介绍******/
+.about_us{
+	width: 100%;
+	height: auto;
+}
+.about_us .about_bg{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	
+}
+.about_us .about_bg img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+
+.location{
+	width: 100%;
+	height: 56px;
+	position: relative;
+}
+.location ul{
+	position: absolute;
+	width: 1200px;
+	height: 56px;
+	left: 50%;
+	margin-left: -600px;
+}
+.location h2{
+	font-size: 11.95px;
+	float: left;
+}
+.location li{
+	height: 56px;
+	font-size: 11.5px;
+	float: left;
+}
+.location ul li h5{
+	font-size:11.5px;
+	padding-top: 2px;
+}
+.location li a{
+	display: block;
+	height: 56px;
+	font-size: 11.5px;
+	line-height: 20px;
+}
+.location .on a{
+	color: #009934;
+}
+.location li:hover a{
+	color: #009934;
+}
+
+
+.main{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.main .news_list{
+	width: 1200px;
+	text-align: center;
+	border-bottom: solid 1px #b7b7b7 ;
+}
+.news_list h2{
+	font-size: 24.26px;
+	color: #009933;
+}
+.news_list span{
+	width: 150px;
+	font-size: 18px;
+    border-bottom: solid 6px #009933;
+    color: #737373;
+}
+
+.about_ol{
+	width: 1200px;
+	height: auto;
+}
+.about_olbg{
+	width: 1200px;
+	height: 130px;
+}
+
+.about_olbg ol {
+    margin: 0 auto;
+    width:700px;
+	height: 50px;
+}
+.about_olbg ol li{
+	padding-top: 19px;
+	font-size: 17.97px;
+	float: left;
+    
+}
+.about_olbg ol li a{
+	width: 175px;
+	height: 50px;
+	font-size: 17.97px;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	color: #b2b2b2;
+}
+.about_olbg ol li:hover a{
+	background: #01733a;
+	color:#F5F5F5;
+}
+.about_olbg ol li a.on{
+	background: #01733a;
+	color:#F5F5F5;
+}
+.about_img {
+	width: 396px;
+	height: auto;
+	float: left;
+}
+.about_img img{
+	width: 378px;
+	height: 337px;
+}
+.about_texts {
+	width: 804px;
+	height: 459px;
+	padding-left: 300px;
+}
+.about_texts p{
+	font-size: 12px;
+	margin: 10px 0;
+}

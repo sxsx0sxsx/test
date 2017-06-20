@@ -1,0 +1,205 @@
+/*******产品中心*******/
+/***************清除滚动条样式**************/
+body{
+	overflow:scroll;
+	overflow-x:hidden;
+}
+.product{
+	width: 100%;
+	height: auto;
+}
+.product .banner_pic{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.product .banner_pic img{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.location{
+	width: 100%;
+	height: 56px;
+	position: relative;
+}
+.location ul{
+	position: absolute;
+	width: 1200px;
+	height: 56px;
+	left: 50%;
+	margin-left: -600px;
+}
+.location li h5{
+	font-size:11.5px;
+	padding-top: 2px;
+}
+.location h2{
+	font-size: 11.95px;
+	float: left;
+}
+.location li{
+	height: 56px;
+	font-size: 11.5px;
+	float: left;
+}
+.location li a{
+	display: block;
+	height: 56px;
+	font-size: 11.5px;
+	line-height: 20px;
+}
+.location .on a{
+	color: #009934;
+}
+.location li:hover a{
+	color: #009934;
+}
+.location a:hover h3{
+	color: #009934;
+}
+.main{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.current {
+	width: 1200px;
+	height: 58px;
+	text-align: center;
+	border-bottom: 1px solid #b7b7b7;
+}
+.current  h2{
+	font-size: 24.26px;
+	color: #009933;
+}
+.current  span{
+	width: 150px;
+	font-size: 17.5px;
+	border-bottom: solid 6px #009933;  
+}
+
+.about_olbg{
+	width: 1200px;
+	height: 140px;
+}
+
+.about_olbg ol {
+    margin: 0 auto;
+    width:700px;
+	height: 60px;
+}
+.about_olbg ol li{
+    width:175px ;
+    height: 50px;
+	padding-top: 19px;
+	font-size: 17.9px;
+	float: left;
+	padding-bottom: 20px;
+}
+.about_olbg ol li a{
+	width: 175px;
+	height: 50px;
+	font-size: 17.97px;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	color: #b2b2b2;
+
+}
+.about_olbg ol li:hover a{
+	background: #01733a;
+    color:#F5F5F5;
+}
+
+.about_olbg ol li a.on{
+	background: #01733a;
+    color:#F5F5F5;
+}
+
+.product_img{
+	width: 1120px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.product_img .Product_text li{
+	width: 257px;
+	height: 404px;
+	float: left;
+	padding-right: 23px;
+	padding-bottom: 26px;
+}
+.product_img .Product_text li img{
+	width: 255px;
+	height: 379px;
+    border:2px solid #A8A8A8;
+}
+.product_img .Product_text li img:hover{
+	border-color: #01733A;
+}
+.product_img .pro_list{
+	margin-left: 90px;
+	
+}
+.product_img .Product_text li a:hover{
+	color:#009933;
+}
+
+.page{
+	width: 1200px;
+	height: 117px;
+	margin: 0 auto;
+	padding-left: 100px;
+	
+}
+
+.page ul{
+	width: 680px;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 68px;
+}
+.page ul li{
+	width: 38px;
+	height: 38px;
+	/*display: block;*/
+	float: left;
+	border: 1px solid;
+	text-align: center;
+	
+	margin-right: 8px;
+}
+.page ul li a{
+	width: 38px;
+	height: 38px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 38px;
+	display: block;
+}
+.page ul .one{
+	width: 74px;
+	height: 40px;
+	
+}
+.page ul .one a{
+	width: 74px;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+}
+.page ul .two{
+   border: 0;
+}
+.page ul li:hover {
+	color: #009933;
+}
+.page ul li a:hover{
+	color: #009933;
+}
+
+.present{
+	background-color: #009933;
+}

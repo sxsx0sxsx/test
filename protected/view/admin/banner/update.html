@@ -1,0 +1,57 @@
+
+<div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>内容框</h3>
+        <ul class="content-box-tabs">
+            
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">
+        
+        <div class="tab-content default-tab" id="tab2">
+          <form action="" method="post" enctype="multipart/form-data" >
+            <fieldset>
+            <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+           
+            <input type="text" name="check" style="display: none;" />
+            <p>
+              <label>轮播图片</label>
+              <input type="file" name="image" id="myfile" />
+              <img src="<?=$arr['image']?>" class="myimg" style="height: 100px" />
+            </p>
+            
+            <p>
+              <input class="button" type="submit" value="Submit" />
+            </p>
+            </fieldset>
+            <div class="clear"></div>
+            <!-- End .clear -->
+          </form>
+        </div>
+        <!-- End #tab2 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+    <!-- End .content-box -->
+    <script type="text/javascript">
+     
+
+
+    $("#myfile").change(function(){
+    
+        var file=this.files[0];
+        if (window.FileReader) {    
+            var reader = new FileReader();    
+            reader.readAsDataURL(file);    
+            //监听文件读取结束后事件    
+          reader.onloadend = function (e) {
+            $(".myimg").attr("src",e.target.result);    //e.target.result就是最后的路径地址
+            };   
+
+       }
+
+    })
+    </script>

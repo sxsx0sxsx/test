@@ -1,0 +1,71 @@
+       <title>新闻中心</title>
+		<link rel="stylesheet" href="css/news.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js" ></script>
+		<script type="text/javascript" src="js/news.js"></script>
+		
+	   
+       <!--新闻中心-->
+        <div class="news">
+        	<div class="banner_pic">
+        	  <a href="index.php?admin=site&m=news&a=news"><img src="img/newsbg1.png"/></a>
+        	</div>
+        	<div class="location">
+        	  <ul>
+        		<li>
+        			<h5>
+        			你的位置 ：
+        			</h5>
+        		</li>
+        		<li>
+        			<a href="index.php?admin=site&m=index&a=index">
+        			 首页 >
+        			</a>
+        		</li>
+        		<li class="on">
+        			<a href="index.php?admin=site&m=news&a=news">
+        			&nbsp;新闻中心
+        			</a>
+        		</li>
+        	  </ul>
+       	     </div>
+        		
+        	
+			<div class="content_main">
+				<div class="content_text">
+					<h2>新闻中心</h2>
+					<span>&nbsp;&nbsp;About Us&nbsp;&nbsp;</span>
+				</div>
+			<div class="about_ol">
+			    <div class="about_olbg">			    	
+			    	<ol>
+			    	<?php foreach($cate as $k=>$v){?>
+			    		<li>
+			    			<a name="<?=$v['id']?>" href=""><?=$v["name"]?></a>
+			    		</li>
+			    	<?php } ?>
+			    	</ol>			    	
+			    </div>
+			    <div class="content_bgtext">
+			    	<ol>
+			    	<?php foreach($arr as $k=>$v){ ?>
+			    		<li>
+			    			<a href="index.php?admin=site&m=news&a=news_details&id=<?=$v['id']?>" class="news_list_pic"><img src="<?=$v['image']?>"></a>
+			    		   <div>
+			    		  	  <h2><?=$v["time"]?></h2>
+				    		  <h3><a href="index.php?admin=site&m=news&a=news_details&id=<?=$v['id']?>"><?=$v["title"]?></a></h3>
+	                          <p><?=$v["content"]?></p>
+	                         
+	                          <a href="index.php?admin=site&m=news&a=news_details&id=<?=$v['id']?>" class="check">查看详情</a>
+			    		   </div>
+			    		</li>
+			    	<?php } ?>
+			    	</ol>
+			    </div>
+			        <div class="nuber">
+			            <?=$page?>
+			        </div>
+			    </div>
+			</div>
+       </div>
+	
+	    
